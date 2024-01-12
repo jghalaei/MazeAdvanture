@@ -1,0 +1,645 @@
+SF:C:\projects\mazeAdvanture\MazeAdvanture\Program.cs
+FN:10,System.Void Program::Main(System.String[])
+FNDA:0,System.Void Program::Main(System.String[])
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:22,0
+BRDA:15,29,0,0
+BRDA:15,29,1,0
+LF:10
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\projects\mazeAdvanture\MazeAdvanture\Settings\MazeSettings.cs
+FN:6,System.Collections.Generic.List`1<MazeAdvanture.Models.RoomType> MazeAdvanture.Settings.MazeSettings::get_RoomTypes()
+FNDA:39,System.Collections.Generic.List`1<MazeAdvanture.Models.RoomType> MazeAdvanture.Settings.MazeSettings::get_RoomTypes()
+DA:7,39
+LF:1
+LH:1
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:C:\projects\mazeAdvanture\MazeAdvanture\Services\MazeGenerator.cs
+FN:16,MazeAdvanture.Models.Maze MazeAdvanture.Services.MazeGenerator::BuildMaze(System.Int32,System.Collections.Generic.List`1<MazeAdvanture.Models.RoomType>)
+FNDA:34,MazeAdvanture.Models.Maze MazeAdvanture.Services.MazeGenerator::BuildMaze(System.Int32,System.Collections.Generic.List`1<MazeAdvanture.Models.RoomType>)
+DA:17,34
+DA:18,34
+DA:19,34
+DA:20,34
+FN:32,System.Collections.Generic.List`1<MazeAdvanture.Models.RoomType> MazeAdvanture.Services.MazeGenerator::GetSafeRoomTypes()
+FNDA:34,System.Collections.Generic.List`1<MazeAdvanture.Models.RoomType> MazeAdvanture.Services.MazeGenerator::GetSafeRoomTypes()
+DA:33,34
+DA:34,238
+DA:35,34
+BRDA:34,6,0,68
+BRDA:34,19,0,68
+BRDA:34,6,1,68
+BRDA:34,19,1,68
+FN:37,MazeAdvanture.Models.Maze MazeAdvanture.Services.MazeGenerator::GenereateMaze()
+FNDA:34,MazeAdvanture.Models.Maze MazeAdvanture.Services.MazeGenerator::GenereateMaze()
+DA:38,34
+DA:39,50
+DA:40,34
+DA:41,34
+DA:43,34
+BRDA:39,15,1,8
+BRDA:39,15,0,34
+FN:45,MazeAdvanture.Models.Room[0...,0...] MazeAdvanture.Services.MazeGenerator::InitializeMaze()
+FNDA:34,MazeAdvanture.Models.Room[0...,0...] MazeAdvanture.Services.MazeGenerator::InitializeMaze()
+DA:46,34
+DA:47,34
+DA:48,446
+DA:49,2648
+DA:50,1135
+DA:51,34
+DA:52,34
+BRDA:48,88,1,189
+BRDA:49,69,1,1135
+BRDA:49,69,0,189
+BRDA:48,88,0,34
+FN:57,System.Boolean MazeAdvanture.Services.MazeGenerator::SetPathToTreasure()
+FNDA:42,System.Boolean MazeAdvanture.Services.MazeGenerator::SetPathToTreasure()
+DA:58,42
+DA:59,42
+DA:60,42
+DA:62,42
+DA:63,42
+DA:65,608
+DA:66,574
+DA:67,574
+DA:68,574
+DA:69,574
+DA:71,574
+DA:72,30
+DA:73,237
+DA:74,207
+DA:75,207
+DA:76,207
+DA:77,30
+DA:78,8
+DA:79,8
+DA:81,22
+DA:83,544
+DA:84,544
+DA:85,544
+DA:86,544
+DA:87,566
+DA:89,34
+DA:90,34
+DA:92,435
+DA:93,401
+DA:94,401
+DA:95,401
+DA:96,401
+DA:97,401
+DA:98,34
+DA:99,42
+BRDA:65,253,1,574
+BRDA:71,121,0,344
+BRDA:71,121,1,230
+BRDA:71,134,0,30
+BRDA:73,197,1,207
+BRDA:73,177,0,229
+BRDA:73,177,1,8
+BRDA:73,197,0,30
+BRDA:77,217,0,8
+BRDA:77,217,1,22
+BRDA:71,134,1,544
+BRDA:65,253,0,34
+BRDA:92,421,1,401
+BRDA:92,421,0,34
+FN:101,System.Boolean MazeAdvanture.Services.MazeGenerator::HasAdjacentUnvisitedRoom(System.Int32,System.Int32)
+FNDA:229,System.Boolean MazeAdvanture.Services.MazeGenerator::HasAdjacentUnvisitedRoom(System.Int32,System.Int32)
+DA:102,229
+DA:103,229
+DA:104,229
+DA:105,229
+DA:106,229
+DA:107,229
+BRDA:103,3,0,187
+BRDA:103,3,1,218
+BRDA:103,20,0,218
+BRDA:103,24,0,171
+BRDA:103,24,1,211
+BRDA:103,41,0,211
+BRDA:103,52,0,164
+BRDA:103,52,1,207
+BRDA:103,69,0,207
+BRDA:103,80,0,172
+BRDA:103,80,1,35
+BRDA:103,20,1,22
+BRDA:103,41,1,22
+BRDA:103,69,1,22
+FN:108,System.ValueTuple`2<System.Int32,System.Int32> MazeAdvanture.Services.MazeGenerator::GetNextRoom(System.Int32,System.Int32)
+FNDA:574,System.ValueTuple`2<System.Int32,System.Int32> MazeAdvanture.Services.MazeGenerator::GetNextRoom(System.Int32,System.Int32)
+DA:109,574
+DA:111,574
+DA:112,234
+DA:114,340
+DA:115,1608
+DA:116,680
+DA:118,1698
+DA:119,819
+DA:120,819
+DA:121,819
+DA:122,310
+DA:123,509
+DA:124,340
+DA:125,30
+DA:126,310
+DA:128,310
+DA:129,1124
+DA:130,338
+DA:131,338
+DA:132,338
+DA:133,338
+DA:134,252
+DA:136,86
+DA:137,252
+DA:139,310
+DA:140,0
+DA:142,310
+DA:143,574
+BRDA:111,19,0,234
+BRDA:111,19,1,340
+BRDA:118,187,1,819
+BRDA:121,167,1,509
+BRDA:121,167,0,340
+BRDA:118,187,0,340
+BRDA:124,208,0,30
+BRDA:124,208,1,310
+BRDA:129,345,1,338
+BRDA:133,300,0,252
+BRDA:133,300,1,310
+BRDA:129,345,0,310
+BRDA:139,365,0,0
+BRDA:139,365,1,310
+FN:145,System.Boolean MazeAdvanture.Services.MazeGenerator::IsValidRoom(System.Int32,System.Int32)
+FNDA:1497,System.Boolean MazeAdvanture.Services.MazeGenerator::IsValidRoom(System.Int32,System.Int32)
+DA:146,1497
+DA:147,1497
+DA:148,1497
+BRDA:147,3,0,1476
+BRDA:147,12,0,1397
+BRDA:147,16,0,1348
+BRDA:147,25,0,1253
+BRDA:147,3,1,244
+BRDA:147,12,1,244
+BRDA:147,16,1,244
+BRDA:147,25,1,244
+FN:150,System.Boolean MazeAdvanture.Services.MazeGenerator::IsTreasure(System.Int32,System.Int32)
+FNDA:608,System.Boolean MazeAdvanture.Services.MazeGenerator::IsTreasure(System.Int32,System.Int32)
+DA:151,608
+DA:152,608
+DA:153,608
+BRDA:152,21,0,58
+BRDA:152,35,0,42
+BRDA:152,21,1,566
+BRDA:152,35,1,566
+FN:156,MazeAdvanture.Models.Room MazeAdvanture.Services.MazeGenerator::SetRandomEntrance()
+FNDA:34,MazeAdvanture.Models.Room MazeAdvanture.Services.MazeGenerator::SetRandomEntrance()
+DA:157,34
+DA:158,34
+DA:159,34
+DA:160,34
+DA:161,34
+DA:164,8
+DA:165,8
+DA:166,8
+DA:168,13
+DA:169,13
+DA:170,13
+DA:172,5
+DA:173,5
+DA:174,5
+DA:176,8
+DA:177,8
+DA:178,8
+DA:179,34
+DA:180,34
+DA:181,34
+DA:182,34
+DA:183,34
+BRDA:161,27,1,8
+BRDA:161,27,2,13
+BRDA:161,27,3,5
+BRDA:161,27,4,8
+BRDA:161,27,0,34
+FN:184,System.Void MazeAdvanture.Services.MazeGenerator::FillAllMaze()
+FNDA:34,System.Void MazeAdvanture.Services.MazeGenerator::FillAllMaze()
+DA:185,34
+DA:186,446
+DA:187,189
+DA:188,2648
+DA:189,1135
+DA:190,1135
+DA:191,734
+DA:192,1135
+DA:193,189
+DA:194,34
+BRDA:186,124,1,189
+BRDA:188,104,1,1135
+BRDA:190,34,0,734
+BRDA:190,34,1,1135
+BRDA:188,104,0,189
+BRDA:186,124,0,34
+FN:20,System.Void MazeAdvanture.Services.MazeGenerator::.ctor(System.Int32,System.Collections.Generic.List`1<MazeAdvanture.Models.RoomType>)
+FNDA:34,System.Void MazeAdvanture.Services.MazeGenerator::.ctor(System.Int32,System.Collections.Generic.List`1<MazeAdvanture.Models.RoomType>)
+DA:21,34
+DA:22,34
+DA:23,34
+DA:24,34
+DA:25,34
+DA:26,34
+DA:27,34
+DA:28,34
+DA:30,34
+DA:53,34
+DA:54,34
+DA:55,34
+LF:138
+LH:137
+BRF:75
+BRH:74
+FNF:12
+FNH:12
+end_of_record
+SF:C:\projects\mazeAdvanture\MazeAdvanture\Services\MazeIntegration.cs
+FN:17,System.Void MazeAdvanture.Services.MazeIntegration::BuildMaze(System.Int32)
+FNDA:13,System.Void MazeAdvanture.Services.MazeIntegration::BuildMaze(System.Int32)
+DA:18,13
+DA:19,13
+DA:20,13
+DA:21,13
+FN:23,System.Int32 MazeAdvanture.Services.MazeIntegration::GetEntranceRoom()
+FNDA:2,System.Int32 MazeAdvanture.Services.MazeIntegration::GetEntranceRoom()
+DA:24,2
+DA:25,2
+DA:26,2
+DA:27,2
+FN:28,System.Nullable`1<System.Int32> MazeAdvanture.Services.MazeIntegration::GetRoom(System.Int32,System.Char)
+FNDA:9,System.Nullable`1<System.Int32> MazeAdvanture.Services.MazeIntegration::GetRoom(System.Int32,System.Char)
+DA:29,9
+DA:30,9
+DA:31,9
+DA:32,9
+FN:34,System.Boolean MazeAdvanture.Services.MazeIntegration::CausesInjury(System.Int32)
+FNDA:0,System.Boolean MazeAdvanture.Services.MazeIntegration::CausesInjury(System.Int32)
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+BRDA:37,31,0,0
+BRDA:37,31,1,0
+FN:40,System.String MazeAdvanture.Services.MazeIntegration::GetDescription(System.Int32)
+FNDA:1,System.String MazeAdvanture.Services.MazeIntegration::GetDescription(System.Int32)
+DA:41,1
+DA:42,1
+DA:43,1
+DA:44,1
+BRDA:43,31,0,0
+BRDA:43,31,1,1
+BRDA:43,43,0,0
+BRDA:43,43,1,1
+FN:45,System.Boolean MazeAdvanture.Services.MazeIntegration::HasTreasure(System.Int32)
+FNDA:9,System.Boolean MazeAdvanture.Services.MazeIntegration::HasTreasure(System.Int32)
+DA:46,9
+DA:47,9
+DA:48,9
+DA:49,9
+DA:50,9
+BRDA:49,32,0,0
+BRDA:49,32,1,9
+FN:51,System.Void MazeAdvanture.Services.MazeIntegration::DrawMaze()
+FNDA:0,System.Void MazeAdvanture.Services.MazeIntegration::DrawMaze()
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:66,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+BRDA:54,346,1,0
+BRDA:57,302,1,0
+BRDA:59,80,0,0
+BRDA:59,80,1,0
+BRDA:63,125,0,0
+BRDA:63,125,1,0
+BRDA:68,172,0,0
+BRDA:68,197,0,0
+BRDA:68,223,0,0
+BRDA:68,223,1,0
+BRDA:68,197,1,0
+BRDA:68,172,1,0
+BRDA:57,302,0,0
+BRDA:54,346,0,0
+FN:11,System.Void MazeAdvanture.Services.MazeIntegration::.ctor(MazeAdvanture.Settings.MazeSettings)
+FNDA:13,System.Void MazeAdvanture.Services.MazeIntegration::.ctor(MazeAdvanture.Settings.MazeSettings)
+DA:12,13
+DA:13,13
+DA:14,13
+DA:15,13
+LF:51
+LH:25
+BRF:22
+BRH:3
+FNF:8
+FNH:6
+end_of_record
+SF:C:\projects\mazeAdvanture\MazeAdvanture\Models\Maze.cs
+FN:4,System.Int32 MazeAdvanture.Models.Maze::get_Size()
+FNDA:781,System.Int32 MazeAdvanture.Models.Maze::get_Size()
+DA:5,781
+FN:7,MazeAdvanture.Models.Room MazeAdvanture.Models.Maze::FindRoom(System.Int32)
+FNDA:33,MazeAdvanture.Models.Room MazeAdvanture.Models.Maze::FindRoom(System.Int32)
+DA:8,33
+DA:9,37
+DA:10,29
+DA:11,128
+DA:12,64
+DA:13,64
+DA:14,29
+DA:15,35
+DA:16,0
+DA:17,33
+BRDA:9,3,0,32
+BRDA:9,3,1,1
+BRDA:9,26,0,4
+BRDA:9,26,1,29
+BRDA:11,109,1,64
+BRDA:13,73,0,29
+BRDA:13,73,1,35
+BRDA:11,109,0,0
+FN:19,System.Nullable`1<System.Int32> MazeAdvanture.Models.Maze::GetRoom(System.Int32,System.Char)
+FNDA:18,System.Nullable`1<System.Int32> MazeAdvanture.Models.Maze::GetRoom(System.Int32,System.Char)
+DA:20,18
+DA:21,18
+DA:22,20
+DA:23,16
+DA:24,16
+DA:27,6
+DA:28,4
+DA:30,6
+DA:31,4
+DA:33,6
+DA:34,4
+DA:36,6
+DA:37,4
+DA:39,24
+DA:40,8
+DA:41,18
+BRDA:22,18,0,2
+BRDA:22,18,1,16
+BRDA:24,49,0,8
+BRDA:24,55,0,4
+BRDA:24,49,1,8
+BRDA:24,74,0,4
+BRDA:24,85,1,4
+BRDA:27,105,0,2
+BRDA:24,55,1,4
+BRDA:30,158,0,2
+BRDA:24,63,1,4
+BRDA:33,201,0,2
+BRDA:24,74,1,4
+BRDA:36,251,0,2
+BRDA:24,63,0,16
+BRDA:24,85,0,16
+BRDA:27,105,1,16
+BRDA:30,158,1,16
+BRDA:33,201,1,16
+BRDA:36,251,1,16
+BRDA:39,292,0,8
+BRDA:39,292,1,8
+LF:27
+LH:26
+BRF:30
+BRH:29
+FNF:3
+FNH:3
+end_of_record
+SF:C:\projects\mazeAdvanture\MazeAdvanture\Models\Room.cs
+FN:9,System.Int32 MazeAdvanture.Models.Room::get_Id()
+FNDA:2910,System.Int32 MazeAdvanture.Models.Room::get_Id()
+DA:10,2910
+FN:11,MazeAdvanture.Models.IRoomType MazeAdvanture.Models.Room::get_RoomType()
+FNDA:2524,MazeAdvanture.Models.IRoomType MazeAdvanture.Models.Room::get_RoomType()
+DA:12,2524
+FN:12,System.Boolean MazeAdvanture.Models.Room::get_IsSolutionPath()
+FNDA:401,System.Boolean MazeAdvanture.Models.Room::get_IsSolutionPath()
+DA:13,401
+FN:13,System.Boolean MazeAdvanture.Models.Room::get_IsEntrance()
+FNDA:1177,System.Boolean MazeAdvanture.Models.Room::get_IsEntrance()
+DA:14,1177
+FN:14,System.Boolean MazeAdvanture.Models.Room::get_IsTreasure()
+FNDA:1333,System.Boolean MazeAdvanture.Models.Room::get_IsTreasure()
+DA:15,1333
+FN:18,System.Boolean MazeAdvanture.Models.Room::IsSafe()
+FNDA:135,System.Boolean MazeAdvanture.Models.Room::IsSafe()
+DA:19,135
+DA:20,135
+DA:21,83
+DA:22,104
+DA:23,135
+BRDA:20,8,0,0
+BRDA:20,8,1,135
+BRDA:20,19,0,52
+BRDA:20,19,1,83
+BRDA:20,45,0,83
+BRDA:20,45,1,52
+BRDA:22,6,0,52
+BRDA:22,6,1,0
+FN:25,System.Boolean MazeAdvanture.Models.Room::CausesInjury()
+FNDA:2,System.Boolean MazeAdvanture.Models.Room::CausesInjury()
+DA:26,2
+DA:27,2
+DA:28,2
+DA:29,2
+DA:30,1
+DA:31,1
+DA:32,2
+BRDA:27,12,0,2
+BRDA:28,22,0,0
+BRDA:28,22,1,2
+BRDA:27,12,1,2
+BRDA:29,44,0,1
+BRDA:29,44,1,1
+BRDA:29,65,0,1
+BRDA:29,65,1,1
+FN:34,System.String MazeAdvanture.Models.Room::GetDescription()
+FNDA:3,System.String MazeAdvanture.Models.Room::GetDescription()
+DA:35,3
+DA:36,3
+DA:37,3
+DA:38,3
+DA:39,3
+DA:40,3
+BRDA:36,12,0,3
+BRDA:37,22,0,0
+BRDA:37,22,1,3
+BRDA:36,12,1,3
+BRDA:38,45,0,0
+BRDA:38,45,1,3
+BRDA:38,68,0,2
+BRDA:38,68,1,1
+LF:23
+LH:23
+BRF:24
+BRH:19
+FNF:8
+FNH:8
+end_of_record
+SF:C:\projects\mazeAdvanture\MazeAdvanture\Models\RoomType.cs
+FN:30,System.String MazeAdvanture.Models.RoomType::get_Name()
+FNDA:125,System.String MazeAdvanture.Models.RoomType::get_Name()
+DA:31,125
+FN:31,System.String MazeAdvanture.Models.RoomType::get_Description()
+FNDA:128,System.String MazeAdvanture.Models.RoomType::get_Description()
+DA:32,128
+FN:32,System.Collections.Generic.List`1<MazeAdvanture.Models.Behaviours.Behaviour> MazeAdvanture.Models.RoomType::get_Behaviours()
+FNDA:644,System.Collections.Generic.List`1<MazeAdvanture.Models.Behaviours.Behaviour> MazeAdvanture.Models.RoomType::get_Behaviours()
+DA:33,644
+FN:35,MazeAdvanture.Models.Behaviours.Behaviour MazeAdvanture.Models.RoomType::TrigerredBehaviour()
+FNDA:3,MazeAdvanture.Models.Behaviours.Behaviour MazeAdvanture.Models.RoomType::TrigerredBehaviour()
+DA:36,3
+DA:37,4
+DA:38,2
+DA:39,2
+DA:40,2
+DA:41,9
+DA:42,2
+DA:43,2
+DA:44,2
+DA:45,2
+DA:46,1
+DA:47,1
+DA:48,1
+DA:49,3
+BRDA:37,7,0,2
+BRDA:37,7,1,1
+BRDA:37,28,0,1
+BRDA:37,28,1,2
+BRDA:41,138,1,2
+BRDA:45,106,0,2
+BRDA:45,106,1,0
+BRDA:45,122,0,1
+BRDA:45,122,1,1
+BRDA:41,138,0,1
+FN:11,System.Void MazeAdvanture.Models.RoomType::.ctor(System.String,System.String,System.Collections.Generic.List`1<MazeAdvanture.Models.Behaviours.Behaviour>)
+FNDA:125,System.Void MazeAdvanture.Models.RoomType::.ctor(System.String,System.String,System.Collections.Generic.List`1<MazeAdvanture.Models.Behaviours.Behaviour>)
+DA:12,125
+DA:13,125
+DA:14,125
+DA:15,125
+DA:16,125
+DA:17,63
+DA:18,63
+DA:19,319
+DA:20,65
+DA:21,65
+DA:24,63
+DA:25,63
+DA:27,65
+DA:28,63
+DA:30,125
+BRDA:16,30,0,63
+BRDA:19,104,1,65
+BRDA:21,77,1,63
+BRDA:21,77,0,65
+BRDA:19,104,0,63
+BRDA:16,30,1,125
+LF:32
+LH:32
+BRF:16
+BRH:15
+FNF:5
+FNH:5
+end_of_record
+SF:C:\projects\mazeAdvanture\MazeAdvanture\Models\Behaviours\Behaviour.cs
+FN:4,MazeAdvanture.Models.Behaviours.EBehaveType MazeAdvanture.Models.Behaviours.Behaviour::get_BehaveType()
+FNDA:131,MazeAdvanture.Models.Behaviours.EBehaveType MazeAdvanture.Models.Behaviours.Behaviour::get_BehaveType()
+DA:5,131
+FN:5,System.String MazeAdvanture.Models.Behaviours.Behaviour::get_Name()
+FNDA:66,System.String MazeAdvanture.Models.Behaviours.Behaviour::get_Name()
+DA:6,66
+FN:6,System.String MazeAdvanture.Models.Behaviours.Behaviour::get_Description()
+FNDA:67,System.String MazeAdvanture.Models.Behaviours.Behaviour::get_Description()
+DA:7,67
+FN:7,System.Double MazeAdvanture.Models.Behaviours.Behaviour::get_Probability()
+FNDA:120,System.Double MazeAdvanture.Models.Behaviours.Behaviour::get_Probability()
+DA:8,120
+FN:8,System.Boolean MazeAdvanture.Models.Behaviours.Behaviour::get_IsSafe()
+FNDA:185,System.Boolean MazeAdvanture.Models.Behaviours.Behaviour::get_IsSafe()
+DA:9,185
+FN:22,MazeAdvanture.Models.Behaviours.BehaviourResult MazeAdvanture.Models.Behaviours.Behaviour::Behave(MazeAdvanture.Models.Maze)
+FNDA:0,MazeAdvanture.Models.Behaviours.BehaviourResult MazeAdvanture.Models.Behaviours.Behaviour::Behave(MazeAdvanture.Models.Maze)
+DA:23,0
+DA:24,0
+DA:25,0
+FN:10,System.Void MazeAdvanture.Models.Behaviours.Behaviour::.ctor(MazeAdvanture.Models.Behaviours.EBehaveType,System.String,System.Double,System.String)
+FNDA:66,System.Void MazeAdvanture.Models.Behaviours.Behaviour::.ctor(MazeAdvanture.Models.Behaviours.EBehaveType,System.String,System.Double,System.String)
+DA:11,66
+DA:12,66
+DA:13,66
+DA:14,66
+DA:15,66
+DA:16,66
+DA:18,66
+LF:15
+LH:12
+BRF:0
+BRH:0
+FNF:7
+FNH:6
+end_of_record
+SF:C:\projects\mazeAdvanture\MazeAdvanture\Models\Behaviours\BehaviourResult.cs
+FN:2,MazeAdvanture.Models.Behaviours.EBehaveType MazeAdvanture.Models.Behaviours.BehaviourResult::get_BehaveType()
+FNDA:0,MazeAdvanture.Models.Behaviours.EBehaveType MazeAdvanture.Models.Behaviours.BehaviourResult::get_BehaveType()
+DA:3,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:C:\projects\mazeAdvanture\MazeAdvanture\Models\Behaviours\TrapBehaviour.cs
+FN:4,System.Void MazeAdvanture.Models.Behaviours.TrapBehaviour::.ctor(System.String,System.Double,System.String)
+FNDA:64,System.Void MazeAdvanture.Models.Behaviours.TrapBehaviour::.ctor(System.String,System.Double,System.String)
+DA:5,64
+DA:6,64
+DA:7,64
+DA:8,64
+LF:4
+LH:4
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record

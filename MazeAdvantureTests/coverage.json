@@ -1,0 +1,1955 @@
+{
+  "MazeAdvanture.dll": {
+    "C:\\projects\\mazeAdvanture\\MazeAdvanture\\Program.cs": {
+      "Program": {
+        "System.Void Program::Main(System.String[])": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "22": 0
+          },
+          "Branches": [
+            {
+              "Line": 15,
+              "Offset": 29,
+              "EndOffset": 31,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 15,
+              "Offset": 29,
+              "EndOffset": 38,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\projects\\mazeAdvanture\\MazeAdvanture\\Settings\\MazeSettings.cs": {
+      "MazeAdvanture.Settings.MazeSettings": {
+        "System.Collections.Generic.List`1<MazeAdvanture.Models.RoomType> MazeAdvanture.Settings.MazeSettings::get_RoomTypes()": {
+          "Lines": {
+            "7": 39
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\projects\\mazeAdvanture\\MazeAdvanture\\Services\\MazeGenerator.cs": {
+      "MazeAdvanture.Services.MazeGenerator": {
+        "MazeAdvanture.Models.Maze MazeAdvanture.Services.MazeGenerator::BuildMaze(System.Int32,System.Collections.Generic.List`1<MazeAdvanture.Models.RoomType>)": {
+          "Lines": {
+            "17": 34,
+            "18": 34,
+            "19": 34,
+            "20": 34
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<MazeAdvanture.Models.RoomType> MazeAdvanture.Services.MazeGenerator::GetSafeRoomTypes()": {
+          "Lines": {
+            "33": 34,
+            "34": 238,
+            "35": 34
+          },
+          "Branches": [
+            {
+              "Line": 34,
+              "Offset": 6,
+              "EndOffset": 8,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 68
+            },
+            {
+              "Line": 34,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 68
+            },
+            {
+              "Line": 34,
+              "Offset": 6,
+              "EndOffset": 65,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 68
+            },
+            {
+              "Line": 34,
+              "Offset": 19,
+              "EndOffset": 65,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 68
+            }
+          ]
+        },
+        "MazeAdvanture.Models.Maze MazeAdvanture.Services.MazeGenerator::GenereateMaze()": {
+          "Lines": {
+            "38": 34,
+            "39": 38,
+            "40": 34,
+            "41": 34,
+            "43": 34
+          },
+          "Branches": [
+            {
+              "Line": 39,
+              "Offset": 15,
+              "EndOffset": 3,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 39,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 34
+            }
+          ]
+        },
+        "MazeAdvanture.Models.Room[0...,0...] MazeAdvanture.Services.MazeGenerator::InitializeMaze()": {
+          "Lines": {
+            "46": 34,
+            "47": 34,
+            "48": 452,
+            "49": 2732,
+            "50": 1174,
+            "51": 34,
+            "52": 34
+          },
+          "Branches": [
+            {
+              "Line": 48,
+              "Offset": 88,
+              "EndOffset": 23,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 192
+            },
+            {
+              "Line": 49,
+              "Offset": 69,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1174
+            },
+            {
+              "Line": 49,
+              "Offset": 69,
+              "EndOffset": 71,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 192
+            },
+            {
+              "Line": 48,
+              "Offset": 88,
+              "EndOffset": 90,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 34
+            }
+          ]
+        },
+        "System.Boolean MazeAdvanture.Services.MazeGenerator::SetPathToTreasure()": {
+          "Lines": {
+            "58": 36,
+            "59": 36,
+            "60": 36,
+            "62": 36,
+            "63": 36,
+            "65": 500,
+            "66": 466,
+            "67": 466,
+            "68": 466,
+            "69": 466,
+            "71": 466,
+            "72": 25,
+            "73": 153,
+            "74": 128,
+            "75": 128,
+            "76": 128,
+            "77": 25,
+            "78": 2,
+            "79": 2,
+            "81": 23,
+            "83": 441,
+            "84": 441,
+            "85": 441,
+            "86": 441,
+            "87": 464,
+            "89": 34,
+            "90": 34,
+            "92": 406,
+            "93": 372,
+            "94": 372,
+            "95": 372,
+            "96": 372,
+            "97": 372,
+            "98": 34,
+            "99": 36
+          },
+          "Branches": [
+            {
+              "Line": 65,
+              "Offset": 253,
+              "EndOffset": 64,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 466
+            },
+            {
+              "Line": 71,
+              "Offset": 121,
+              "EndOffset": 123,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 287
+            },
+            {
+              "Line": 71,
+              "Offset": 121,
+              "EndOffset": 129,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 179
+            },
+            {
+              "Line": 71,
+              "Offset": 134,
+              "EndOffset": 136,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 25
+            },
+            {
+              "Line": 73,
+              "Offset": 197,
+              "EndOffset": 139,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 128
+            },
+            {
+              "Line": 73,
+              "Offset": 177,
+              "EndOffset": 179,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 151
+            },
+            {
+              "Line": 73,
+              "Offset": 177,
+              "EndOffset": 192,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 2
+            },
+            {
+              "Line": 73,
+              "Offset": 197,
+              "EndOffset": 199,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 25
+            },
+            {
+              "Line": 77,
+              "Offset": 217,
+              "EndOffset": 219,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 2
+            },
+            {
+              "Line": 77,
+              "Offset": 217,
+              "EndOffset": 228,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 23
+            },
+            {
+              "Line": 71,
+              "Offset": 134,
+              "EndOffset": 231,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 441
+            },
+            {
+              "Line": 65,
+              "Offset": 253,
+              "EndOffset": 258,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 34
+            },
+            {
+              "Line": 92,
+              "Offset": 421,
+              "EndOffset": 299,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 372
+            },
+            {
+              "Line": 92,
+              "Offset": 421,
+              "EndOffset": 423,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 34
+            }
+          ]
+        },
+        "System.Boolean MazeAdvanture.Services.MazeGenerator::HasAdjacentUnvisitedRoom(System.Int32,System.Int32)": {
+          "Lines": {
+            "102": 151,
+            "103": 151,
+            "104": 151,
+            "105": 151,
+            "106": 151,
+            "107": 151
+          },
+          "Branches": [
+            {
+              "Line": 103,
+              "Offset": 3,
+              "EndOffset": 5,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 137
+            },
+            {
+              "Line": 103,
+              "Offset": 3,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 138
+            },
+            {
+              "Line": 103,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 138
+            },
+            {
+              "Line": 103,
+              "Offset": 24,
+              "EndOffset": 26,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 118
+            },
+            {
+              "Line": 103,
+              "Offset": 24,
+              "EndOffset": 43,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 132
+            },
+            {
+              "Line": 103,
+              "Offset": 41,
+              "EndOffset": 43,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 132
+            },
+            {
+              "Line": 103,
+              "Offset": 52,
+              "EndOffset": 54,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 102
+            },
+            {
+              "Line": 103,
+              "Offset": 52,
+              "EndOffset": 71,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 131
+            },
+            {
+              "Line": 103,
+              "Offset": 69,
+              "EndOffset": 71,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 131
+            },
+            {
+              "Line": 103,
+              "Offset": 80,
+              "EndOffset": 82,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 112
+            },
+            {
+              "Line": 103,
+              "Offset": 80,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 19
+            },
+            {
+              "Line": 103,
+              "Offset": 20,
+              "EndOffset": 105,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 20
+            },
+            {
+              "Line": 103,
+              "Offset": 41,
+              "EndOffset": 105,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 20
+            },
+            {
+              "Line": 103,
+              "Offset": 69,
+              "EndOffset": 105,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 20
+            }
+          ]
+        },
+        "System.ValueTuple`2<System.Int32,System.Int32> MazeAdvanture.Services.MazeGenerator::GetNextRoom(System.Int32,System.Int32)": {
+          "Lines": {
+            "109": 466,
+            "111": 466,
+            "112": 189,
+            "114": 277,
+            "115": 1323,
+            "116": 554,
+            "118": 1288,
+            "119": 619,
+            "120": 619,
+            "121": 619,
+            "122": 252,
+            "123": 367,
+            "124": 277,
+            "125": 25,
+            "126": 252,
+            "128": 252,
+            "129": 924,
+            "130": 278,
+            "131": 278,
+            "132": 278,
+            "133": 278,
+            "134": 210,
+            "136": 68,
+            "137": 210,
+            "139": 252,
+            "140": 0,
+            "142": 252,
+            "143": 466
+          },
+          "Branches": [
+            {
+              "Line": 111,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 189
+            },
+            {
+              "Line": 111,
+              "Offset": 19,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 277
+            },
+            {
+              "Line": 118,
+              "Offset": 187,
+              "EndOffset": 129,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 619
+            },
+            {
+              "Line": 121,
+              "Offset": 167,
+              "EndOffset": 171,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 367
+            },
+            {
+              "Line": 121,
+              "Offset": 167,
+              "EndOffset": 189,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 277
+            },
+            {
+              "Line": 118,
+              "Offset": 187,
+              "EndOffset": 189,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 277
+            },
+            {
+              "Line": 124,
+              "Offset": 208,
+              "EndOffset": 210,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 25
+            },
+            {
+              "Line": 124,
+              "Offset": 208,
+              "EndOffset": 224,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 252
+            },
+            {
+              "Line": 129,
+              "Offset": 345,
+              "EndOffset": 273,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 278
+            },
+            {
+              "Line": 133,
+              "Offset": 300,
+              "EndOffset": 302,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 210
+            },
+            {
+              "Line": 133,
+              "Offset": 300,
+              "EndOffset": 347,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 252
+            },
+            {
+              "Line": 129,
+              "Offset": 345,
+              "EndOffset": 347,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 252
+            },
+            {
+              "Line": 139,
+              "Offset": 365,
+              "EndOffset": 367,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 139,
+              "Offset": 365,
+              "EndOffset": 378,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 252
+            }
+          ]
+        },
+        "System.Boolean MazeAdvanture.Services.MazeGenerator::IsValidRoom(System.Int32,System.Int32)": {
+          "Lines": {
+            "146": 1174,
+            "147": 1174,
+            "148": 1174
+          },
+          "Branches": [
+            {
+              "Line": 147,
+              "Offset": 3,
+              "EndOffset": 5,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1158
+            },
+            {
+              "Line": 147,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1094
+            },
+            {
+              "Line": 147,
+              "Offset": 16,
+              "EndOffset": 18,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1071
+            },
+            {
+              "Line": 147,
+              "Offset": 25,
+              "EndOffset": 27,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1006
+            },
+            {
+              "Line": 147,
+              "Offset": 3,
+              "EndOffset": 45,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 168
+            },
+            {
+              "Line": 147,
+              "Offset": 12,
+              "EndOffset": 45,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 168
+            },
+            {
+              "Line": 147,
+              "Offset": 16,
+              "EndOffset": 45,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 168
+            },
+            {
+              "Line": 147,
+              "Offset": 25,
+              "EndOffset": 45,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 168
+            }
+          ]
+        },
+        "System.Boolean MazeAdvanture.Services.MazeGenerator::IsTreasure(System.Int32,System.Int32)": {
+          "Lines": {
+            "151": 500,
+            "152": 500,
+            "153": 500
+          },
+          "Branches": [
+            {
+              "Line": 152,
+              "Offset": 21,
+              "EndOffset": 23,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 52
+            },
+            {
+              "Line": 152,
+              "Offset": 35,
+              "EndOffset": 37,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 39
+            },
+            {
+              "Line": 152,
+              "Offset": 21,
+              "EndOffset": 56,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 461
+            },
+            {
+              "Line": 152,
+              "Offset": 35,
+              "EndOffset": 56,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 461
+            }
+          ]
+        },
+        "MazeAdvanture.Models.Room MazeAdvanture.Services.MazeGenerator::SetRandomEntrance()": {
+          "Lines": {
+            "157": 34,
+            "158": 34,
+            "159": 34,
+            "160": 34,
+            "161": 34,
+            "164": 6,
+            "165": 6,
+            "166": 6,
+            "168": 6,
+            "169": 6,
+            "170": 6,
+            "172": 10,
+            "173": 10,
+            "174": 10,
+            "176": 12,
+            "177": 12,
+            "178": 12,
+            "179": 34,
+            "180": 34,
+            "181": 34,
+            "182": 34,
+            "183": 34
+          },
+          "Branches": [
+            {
+              "Line": 161,
+              "Offset": 27,
+              "EndOffset": 50,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            },
+            {
+              "Line": 161,
+              "Offset": 27,
+              "EndOffset": 72,
+              "Path": 2,
+              "Ordinal": 2,
+              "Hits": 6
+            },
+            {
+              "Line": 161,
+              "Offset": 27,
+              "EndOffset": 101,
+              "Path": 3,
+              "Ordinal": 3,
+              "Hits": 10
+            },
+            {
+              "Line": 161,
+              "Offset": 27,
+              "EndOffset": 130,
+              "Path": 4,
+              "Ordinal": 4,
+              "Hits": 12
+            },
+            {
+              "Line": 161,
+              "Offset": 27,
+              "EndOffset": 152,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 34
+            }
+          ]
+        },
+        "System.Void MazeAdvanture.Services.MazeGenerator::FillAllMaze()": {
+          "Lines": {
+            "185": 34,
+            "186": 452,
+            "187": 192,
+            "188": 2732,
+            "189": 1174,
+            "190": 1174,
+            "191": 802,
+            "192": 1174,
+            "193": 192,
+            "194": 34
+          },
+          "Branches": [
+            {
+              "Line": 186,
+              "Offset": 124,
+              "EndOffset": 5,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 192
+            },
+            {
+              "Line": 188,
+              "Offset": 104,
+              "EndOffset": 10,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1174
+            },
+            {
+              "Line": 190,
+              "Offset": 34,
+              "EndOffset": 36,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 802
+            },
+            {
+              "Line": 190,
+              "Offset": 34,
+              "EndOffset": 88,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1174
+            },
+            {
+              "Line": 188,
+              "Offset": 104,
+              "EndOffset": 106,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 192
+            },
+            {
+              "Line": 186,
+              "Offset": 124,
+              "EndOffset": 126,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 34
+            }
+          ]
+        },
+        "System.Void MazeAdvanture.Services.MazeGenerator::.ctor(System.Int32,System.Collections.Generic.List`1<MazeAdvanture.Models.RoomType>)": {
+          "Lines": {
+            "21": 34,
+            "22": 34,
+            "23": 34,
+            "24": 34,
+            "25": 34,
+            "26": 34,
+            "27": 34,
+            "28": 34,
+            "30": 34,
+            "53": 34,
+            "54": 34,
+            "55": 34
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\projects\\mazeAdvanture\\MazeAdvanture\\Services\\MazeIntegration.cs": {
+      "MazeAdvanture.Services.MazeIntegration": {
+        "System.Void MazeAdvanture.Services.MazeIntegration::BuildMaze(System.Int32)": {
+          "Lines": {
+            "18": 13,
+            "19": 13,
+            "20": 13,
+            "21": 13
+          },
+          "Branches": []
+        },
+        "System.Int32 MazeAdvanture.Services.MazeIntegration::GetEntranceRoom()": {
+          "Lines": {
+            "24": 2,
+            "25": 2,
+            "26": 2,
+            "27": 2
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Int32> MazeAdvanture.Services.MazeIntegration::GetRoom(System.Int32,System.Char)": {
+          "Lines": {
+            "29": 9,
+            "30": 9,
+            "31": 9,
+            "32": 9
+          },
+          "Branches": []
+        },
+        "System.Boolean MazeAdvanture.Services.MazeIntegration::CausesInjury(System.Int32)": {
+          "Lines": {
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": [
+            {
+              "Line": 37,
+              "Offset": 31,
+              "EndOffset": 33,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 37,
+              "Offset": 31,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.String MazeAdvanture.Services.MazeIntegration::GetDescription(System.Int32)": {
+          "Lines": {
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1
+          },
+          "Branches": [
+            {
+              "Line": 43,
+              "Offset": 31,
+              "EndOffset": 33,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 43,
+              "Offset": 31,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 43,
+              "Offset": 43,
+              "EndOffset": 45,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 43,
+              "Offset": 43,
+              "EndOffset": 51,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Boolean MazeAdvanture.Services.MazeIntegration::HasTreasure(System.Int32)": {
+          "Lines": {
+            "46": 9,
+            "47": 9,
+            "48": 9,
+            "49": 9,
+            "50": 9
+          },
+          "Branches": [
+            {
+              "Line": 49,
+              "Offset": 32,
+              "EndOffset": 34,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 32,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 9
+            }
+          ]
+        },
+        "System.Void MazeAdvanture.Services.MazeIntegration::DrawMaze()": {
+          "Lines": {
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "66": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0
+          },
+          "Branches": [
+            {
+              "Line": 54,
+              "Offset": 346,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 57,
+              "Offset": 302,
+              "EndOffset": 54,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 80,
+              "EndOffset": 82,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 80,
+              "EndOffset": 92,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 63,
+              "Offset": 125,
+              "EndOffset": 127,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 63,
+              "Offset": 125,
+              "EndOffset": 137,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 172,
+              "EndOffset": 174,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 197,
+              "EndOffset": 199,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 223,
+              "EndOffset": 225,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 223,
+              "EndOffset": 229,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 197,
+              "EndOffset": 243,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 172,
+              "EndOffset": 250,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 57,
+              "Offset": 302,
+              "EndOffset": 307,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 54,
+              "Offset": 346,
+              "EndOffset": 351,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void MazeAdvanture.Services.MazeIntegration::.ctor(MazeAdvanture.Settings.MazeSettings)": {
+          "Lines": {
+            "12": 13,
+            "13": 13,
+            "14": 13,
+            "15": 13
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\projects\\mazeAdvanture\\MazeAdvanture\\Models\\Maze.cs": {
+      "MazeAdvanture.Models.Maze": {
+        "System.Int32 MazeAdvanture.Models.Maze::get_Size()": {
+          "Lines": {
+            "5": 705
+          },
+          "Branches": []
+        },
+        "MazeAdvanture.Models.Room MazeAdvanture.Models.Maze::FindRoom(System.Int32)": {
+          "Lines": {
+            "8": 33,
+            "9": 37,
+            "10": 29,
+            "11": 128,
+            "12": 64,
+            "13": 64,
+            "14": 29,
+            "15": 35,
+            "16": 0,
+            "17": 33
+          },
+          "Branches": [
+            {
+              "Line": 9,
+              "Offset": 3,
+              "EndOffset": 5,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 32
+            },
+            {
+              "Line": 9,
+              "Offset": 3,
+              "EndOffset": 23,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 9,
+              "Offset": 26,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 4
+            },
+            {
+              "Line": 9,
+              "Offset": 26,
+              "EndOffset": 32,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 29
+            },
+            {
+              "Line": 11,
+              "Offset": 109,
+              "EndOffset": 47,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 64
+            },
+            {
+              "Line": 13,
+              "Offset": 73,
+              "EndOffset": 75,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 29
+            },
+            {
+              "Line": 13,
+              "Offset": 73,
+              "EndOffset": 91,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 35
+            },
+            {
+              "Line": 11,
+              "Offset": 109,
+              "EndOffset": 111,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Nullable`1<System.Int32> MazeAdvanture.Models.Maze::GetRoom(System.Int32,System.Char)": {
+          "Lines": {
+            "20": 18,
+            "21": 18,
+            "22": 20,
+            "23": 16,
+            "24": 16,
+            "27": 6,
+            "28": 4,
+            "30": 6,
+            "31": 4,
+            "33": 6,
+            "34": 4,
+            "36": 6,
+            "37": 4,
+            "39": 24,
+            "40": 8,
+            "41": 18
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 22,
+              "Offset": 18,
+              "EndOffset": 36,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 16
+            },
+            {
+              "Line": 24,
+              "Offset": 49,
+              "EndOffset": 51,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 8
+            },
+            {
+              "Line": 24,
+              "Offset": 55,
+              "EndOffset": 59,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 4
+            },
+            {
+              "Line": 24,
+              "Offset": 49,
+              "EndOffset": 70,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 8
+            },
+            {
+              "Line": 24,
+              "Offset": 74,
+              "EndOffset": 81,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 4
+            },
+            {
+              "Line": 24,
+              "Offset": 85,
+              "EndOffset": 92,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 4
+            },
+            {
+              "Line": 27,
+              "Offset": 105,
+              "EndOffset": 107,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 2
+            },
+            {
+              "Line": 24,
+              "Offset": 55,
+              "EndOffset": 138,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 4
+            },
+            {
+              "Line": 30,
+              "Offset": 158,
+              "EndOffset": 160,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 2
+            },
+            {
+              "Line": 24,
+              "Offset": 63,
+              "EndOffset": 188,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 4
+            },
+            {
+              "Line": 33,
+              "Offset": 201,
+              "EndOffset": 203,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 2
+            },
+            {
+              "Line": 24,
+              "Offset": 74,
+              "EndOffset": 231,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 4
+            },
+            {
+              "Line": 36,
+              "Offset": 251,
+              "EndOffset": 253,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 2
+            },
+            {
+              "Line": 24,
+              "Offset": 63,
+              "EndOffset": 281,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 16
+            },
+            {
+              "Line": 24,
+              "Offset": 85,
+              "EndOffset": 281,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 16
+            },
+            {
+              "Line": 27,
+              "Offset": 105,
+              "EndOffset": 281,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 16
+            },
+            {
+              "Line": 30,
+              "Offset": 158,
+              "EndOffset": 281,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 16
+            },
+            {
+              "Line": 33,
+              "Offset": 201,
+              "EndOffset": 281,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 16
+            },
+            {
+              "Line": 36,
+              "Offset": 251,
+              "EndOffset": 281,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 16
+            },
+            {
+              "Line": 39,
+              "Offset": 292,
+              "EndOffset": 294,
+              "Path": 0,
+              "Ordinal": 20,
+              "Hits": 8
+            },
+            {
+              "Line": 39,
+              "Offset": 292,
+              "EndOffset": 309,
+              "Path": 1,
+              "Ordinal": 21,
+              "Hits": 8
+            }
+          ]
+        }
+      }
+    },
+    "C:\\projects\\mazeAdvanture\\MazeAdvanture\\Models\\Room.cs": {
+      "MazeAdvanture.Models.Room": {
+        "System.Int32 MazeAdvanture.Models.Room::get_Id()": {
+          "Lines": {
+            "10": 2752
+          },
+          "Branches": []
+        },
+        "MazeAdvanture.Models.IRoomType MazeAdvanture.Models.Room::get_RoomType()": {
+          "Lines": {
+            "12": 2627
+          },
+          "Branches": []
+        },
+        "System.Boolean MazeAdvanture.Models.Room::get_IsSolutionPath()": {
+          "Lines": {
+            "13": 372
+          },
+          "Branches": []
+        },
+        "System.Boolean MazeAdvanture.Models.Room::get_IsEntrance()": {
+          "Lines": {
+            "14": 1216
+          },
+          "Branches": []
+        },
+        "System.Boolean MazeAdvanture.Models.Room::get_IsTreasure()": {
+          "Lines": {
+            "15": 1390
+          },
+          "Branches": []
+        },
+        "System.Boolean MazeAdvanture.Models.Room::IsSafe()": {
+          "Lines": {
+            "19": 136,
+            "20": 136,
+            "21": 72,
+            "22": 128,
+            "23": 136
+          },
+          "Branches": [
+            {
+              "Line": 20,
+              "Offset": 8,
+              "EndOffset": 10,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 8,
+              "EndOffset": 14,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 136
+            },
+            {
+              "Line": 20,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 64
+            },
+            {
+              "Line": 20,
+              "Offset": 19,
+              "EndOffset": 42,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 72
+            },
+            {
+              "Line": 20,
+              "Offset": 45,
+              "EndOffset": 47,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 72
+            },
+            {
+              "Line": 20,
+              "Offset": 45,
+              "EndOffset": 51,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 64
+            },
+            {
+              "Line": 22,
+              "Offset": 6,
+              "EndOffset": 8,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 64
+            },
+            {
+              "Line": 22,
+              "Offset": 6,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Boolean MazeAdvanture.Models.Room::CausesInjury()": {
+          "Lines": {
+            "26": 2,
+            "27": 2,
+            "28": 2,
+            "29": 2,
+            "30": 1,
+            "31": 1,
+            "32": 2
+          },
+          "Branches": [
+            {
+              "Line": 27,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 28,
+              "Offset": 22,
+              "EndOffset": 24,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 28,
+              "Offset": 22,
+              "EndOffset": 28,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 27,
+              "Offset": 12,
+              "EndOffset": 38,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 29,
+              "Offset": 44,
+              "EndOffset": 46,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 29,
+              "Offset": 44,
+              "EndOffset": 62,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            },
+            {
+              "Line": 29,
+              "Offset": 65,
+              "EndOffset": 67,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 29,
+              "Offset": 65,
+              "EndOffset": 71,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.String MazeAdvanture.Models.Room::GetDescription()": {
+          "Lines": {
+            "35": 3,
+            "36": 3,
+            "37": 3,
+            "38": 3,
+            "39": 3,
+            "40": 3
+          },
+          "Branches": [
+            {
+              "Line": 36,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 3
+            },
+            {
+              "Line": 37,
+              "Offset": 22,
+              "EndOffset": 24,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 37,
+              "Offset": 22,
+              "EndOffset": 28,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 3
+            },
+            {
+              "Line": 36,
+              "Offset": 12,
+              "EndOffset": 38,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 3
+            },
+            {
+              "Line": 38,
+              "Offset": 45,
+              "EndOffset": 47,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 45,
+              "EndOffset": 51,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 3
+            },
+            {
+              "Line": 38,
+              "Offset": 68,
+              "EndOffset": 70,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 2
+            },
+            {
+              "Line": 38,
+              "Offset": 68,
+              "EndOffset": 74,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\projects\\mazeAdvanture\\MazeAdvanture\\Models\\RoomType.cs": {
+      "MazeAdvanture.Models.RoomType": {
+        "System.String MazeAdvanture.Models.RoomType::get_Name()": {
+          "Lines": {
+            "31": 125
+          },
+          "Branches": []
+        },
+        "System.String MazeAdvanture.Models.RoomType::get_Description()": {
+          "Lines": {
+            "32": 128
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<MazeAdvanture.Models.Behaviours.Behaviour> MazeAdvanture.Models.RoomType::get_Behaviours()": {
+          "Lines": {
+            "33": 667
+          },
+          "Branches": []
+        },
+        "MazeAdvanture.Models.Behaviours.Behaviour MazeAdvanture.Models.RoomType::TrigerredBehaviour()": {
+          "Lines": {
+            "36": 3,
+            "37": 5,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 4,
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "46": 1,
+            "47": 0,
+            "48": 0,
+            "49": 3
+          },
+          "Branches": [
+            {
+              "Line": 37,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 37,
+              "Offset": 7,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 37,
+              "Offset": 28,
+              "EndOffset": 30,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 37,
+              "Offset": 28,
+              "EndOffset": 35,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 41,
+              "Offset": 138,
+              "EndOffset": 82,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 1
+            },
+            {
+              "Line": 45,
+              "Offset": 106,
+              "EndOffset": 108,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 45,
+              "Offset": 106,
+              "EndOffset": 117,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 45,
+              "Offset": 122,
+              "EndOffset": 124,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 45,
+              "Offset": 122,
+              "EndOffset": 130,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 41,
+              "Offset": 138,
+              "EndOffset": 140,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void MazeAdvanture.Models.RoomType::.ctor(System.String,System.String,System.Collections.Generic.List`1<MazeAdvanture.Models.Behaviours.Behaviour>)": {
+          "Lines": {
+            "12": 125,
+            "13": 125,
+            "14": 125,
+            "15": 125,
+            "16": 125,
+            "17": 63,
+            "18": 63,
+            "19": 319,
+            "20": 65,
+            "21": 65,
+            "24": 63,
+            "25": 63,
+            "27": 65,
+            "28": 63,
+            "30": 125
+          },
+          "Branches": [
+            {
+              "Line": 16,
+              "Offset": 30,
+              "EndOffset": 32,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 63
+            },
+            {
+              "Line": 19,
+              "Offset": 104,
+              "EndOffset": 55,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 65
+            },
+            {
+              "Line": 21,
+              "Offset": 77,
+              "EndOffset": 81,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 63
+            },
+            {
+              "Line": 21,
+              "Offset": 77,
+              "EndOffset": 96,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 65
+            },
+            {
+              "Line": 19,
+              "Offset": 104,
+              "EndOffset": 106,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 63
+            },
+            {
+              "Line": 16,
+              "Offset": 30,
+              "EndOffset": 124,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 125
+            }
+          ]
+        }
+      }
+    },
+    "C:\\projects\\mazeAdvanture\\MazeAdvanture\\Models\\Behaviours\\Behaviour.cs": {
+      "MazeAdvanture.Models.Behaviours.Behaviour": {
+        "MazeAdvanture.Models.Behaviours.EBehaveType MazeAdvanture.Models.Behaviours.Behaviour::get_BehaveType()": {
+          "Lines": {
+            "5": 131
+          },
+          "Branches": []
+        },
+        "System.String MazeAdvanture.Models.Behaviours.Behaviour::get_Name()": {
+          "Lines": {
+            "6": 66
+          },
+          "Branches": []
+        },
+        "System.String MazeAdvanture.Models.Behaviours.Behaviour::get_Description()": {
+          "Lines": {
+            "7": 67
+          },
+          "Branches": []
+        },
+        "System.Double MazeAdvanture.Models.Behaviours.Behaviour::get_Probability()": {
+          "Lines": {
+            "8": 131
+          },
+          "Branches": []
+        },
+        "System.Boolean MazeAdvanture.Models.Behaviours.Behaviour::get_IsSafe()": {
+          "Lines": {
+            "9": 197
+          },
+          "Branches": []
+        },
+        "MazeAdvanture.Models.Behaviours.BehaviourResult MazeAdvanture.Models.Behaviours.Behaviour::Behave(MazeAdvanture.Models.Maze)": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "25": 0
+          },
+          "Branches": []
+        },
+        "System.Void MazeAdvanture.Models.Behaviours.Behaviour::.ctor(MazeAdvanture.Models.Behaviours.EBehaveType,System.String,System.Double,System.String)": {
+          "Lines": {
+            "11": 66,
+            "12": 66,
+            "13": 66,
+            "14": 66,
+            "15": 66,
+            "16": 66,
+            "18": 66
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\projects\\mazeAdvanture\\MazeAdvanture\\Models\\Behaviours\\BehaviourResult.cs": {
+      "MazeAdvanture.Models.Behaviours.BehaviourResult": {
+        "MazeAdvanture.Models.Behaviours.EBehaveType MazeAdvanture.Models.Behaviours.BehaviourResult::get_BehaveType()": {
+          "Lines": {
+            "3": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\projects\\mazeAdvanture\\MazeAdvanture\\Models\\Behaviours\\TrapBehaviour.cs": {
+      "MazeAdvanture.Models.Behaviours.TrapBehaviour": {
+        "System.Void MazeAdvanture.Models.Behaviours.TrapBehaviour::.ctor(System.String,System.Double,System.String)": {
+          "Lines": {
+            "5": 64,
+            "6": 64,
+            "7": 64,
+            "8": 64
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
