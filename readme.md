@@ -34,6 +34,20 @@ a console app to provide a simple way to play and test the functionality of the 
 - Check if the room has treasure.
 - Check if the room caused injury.
 
+### MazeAdvanturePlay
+
+To run the console app, go to the project folder and run the command. the general usage of command is like this: dotnet run < play/draw > < size >
+
+```cmd
+dotnet run draw 10
+```
+
+OR
+
+```
+dotnet run play 10
+```
+
 ## An Example of the Settings File:
 
 ```json
