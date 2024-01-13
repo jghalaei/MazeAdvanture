@@ -7,11 +7,9 @@ namespace MazeAdvanture.Models
         public Room? FindRoom(int roomId)
         {
             if (roomId < 1 || roomId > Size * Size) return null;
-            int y = (roomId - 1) / Size;
-            for (int i = 0; i < Size; i++)
+            foreach (var room in Rooms)
             {
-                if (Rooms[i, y].Id == roomId)
-                    return Rooms[i, y];
+                if (room.Id == roomId) return room;
             }
             return null;
         }

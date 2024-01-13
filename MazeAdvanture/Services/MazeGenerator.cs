@@ -5,7 +5,7 @@ namespace MazeAdvanture.Services
 
     public class MazeGenerator
     {
-
+        private const double TreasureProbability = 0.1;
         private Random random;
         private List<RoomType> roomTypes;
         private List<RoomType> safeRoomTypes;
@@ -13,37 +13,37 @@ namespace MazeAdvanture.Services
         private Room[,] rooms;
         private Room entrance;
 
+        private bool[,] visitedRooms = new bool[0, 0];
+        private Queue<(int, int)> queueNextRooms = new();
         public static Maze BuildMaze(int size, List<RoomType> roomTypes)
         {
             MazeGenerator generator = new MazeGenerator(size, roomTypes);
-            return generator.GenereateMaze();
+            return generator.GenerateMaze();
         }
         private MazeGenerator(int size, List<RoomType> roomTypes)
         {
+            if (size <= 2) throw new ArgumentException("Size must be greater than 1");
             random = new Random();
             this.size = size;
-            this.roomTypes = roomTypes;
+            this.roomTypes = roomTypes ?? throw new ArgumentNullException("RoomTypes cannot be null");
             safeRoomTypes = GetSafeRoomTypes();
             if (safeRoomTypes.Count == 0)
                 throw new ArgumentException("There are no safe rooms");
             rooms = InitializeMaze();
             entrance = SetRandomEntrance();
-
         }
 
-        private List<RoomType> GetSafeRoomTypes()
-        {
-            return roomTypes.FindAll(r => r.Behaviours == null || r.Behaviours.Count == 0 || r.Behaviours.All(b => !b.CoausesInjury));
-        }
-
-        private Maze GenereateMaze()
+        private Maze GenerateMaze()
         {
             while (!SetPathToTreasure()) ;
             FillAllMaze();
             return new Maze(size, rooms, entrance);
 
         }
-
+        private List<RoomType> GetSafeRoomTypes()
+        {
+            return roomTypes.FindAll(r => r.Behaviours == null || r.Behaviours.Count == 0 || r.Behaviours.All(b => !b.CoausesInjury));
+        }
         private Room[,] InitializeMaze()
         {
             var rooms = new Room[size, size];
@@ -52,106 +52,120 @@ namespace MazeAdvanture.Services
                     rooms[x, y] = new Room(x + y * size + 1, x, y);
             return rooms;
         }
-        private Stack<(int, int)> pathStack = new();
-        private bool[,] visited = new bool[0, 0];
-        private Queue<(int, int)> queueNextRooms = new();
-
         private bool SetPathToTreasure()
         {
-            pathStack = new();
-            visited = new bool[size, size];
+            Stack<(int, int)> stackSafePath = new();
+            visitedRooms = new bool[size, size];
 
             int currentX = entrance.X;
             int currentY = entrance.Y;
 
             while (!IsTreasure(currentX, currentY))
             {
-                visited[currentX, currentY] = true;
-                pathStack.Push((currentX, currentY));
-                (int nextX, int nextY) = GetNextRoom(currentX, currentY);
+                visitedRooms[currentX, currentY] = true;
+                stackSafePath.Push((currentX, currentY));
 
-                if (nextX == currentX && nextY == currentY)
+                (int nextX, int nextY) = GetNextRoom(currentX, currentY);
+                if (nextX == currentX && nextY == currentY)//if room is locked, backtrack
                 {
-                    while (pathStack.Count > 0 && !HasAdjacentUnvisitedRoom(currentX, currentY))
-                    {
-                        (currentX, currentY) = pathStack.Pop();
-                    }
-                    if (pathStack.Count == 0)
-                    {
+                    if (!BacktrackPath(stackSafePath, ref currentX, ref currentY))
                         return false;
-                    }
                 }
                 else
                 {
+                    //set next room
                     currentX = nextX;
                     currentY = nextY;
                 }
             }
-
-            pathStack.Push((currentX, currentY));
+            stackSafePath.Push((currentX, currentY));
             rooms[currentX, currentY].IsTreasure = true;
 
-            while (pathStack.Count > 0)
+            MarkSafePath(stackSafePath);
+            return true;
+        }
+
+        private void MarkSafePath(Stack<(int, int)> stackSafePath)
+        {
+            while (stackSafePath.Count > 0)
             {
-                (int x, int y) = pathStack.Pop();
+                (int x, int y) = stackSafePath.Pop();
                 rooms[x, y].IsSolutionPath = true;
                 rooms[x, y].RoomType = safeRoomTypes[random.Next(safeRoomTypes.Count)];
+            }
+        }
+
+        private bool BacktrackPath(Stack<(int, int)> stackSafePath, ref int currentX, ref int currentY)
+        {
+            while (!HasAdjacentUnvisitedRoom(currentX, currentY))
+            {
+                if (stackSafePath.Count == 0) // no safe path
+                    return false;
+                (currentX, currentY) = stackSafePath.Pop();
             }
             return true;
         }
 
         private bool HasAdjacentUnvisitedRoom(int X, int Y)
         {
-            return X > 0 && !visited[X - 1, Y] ||
-                    Y > 0 && !visited[X, Y - 1] ||
-                    X < size - 1 && !visited[X + 1, Y] ||
-                    Y < size - 1 && !visited[X, Y + 1];
+            return (X > 0 && !visitedRooms[X - 1, Y]) ||
+                   (Y > 0 && !visitedRooms[X, Y - 1]) ||
+                   (X < size - 1 && !visitedRooms[X + 1, Y]) ||
+                   (Y < size - 1 && !visitedRooms[X, Y + 1]);
         }
         private (int nextX, int nextY) GetNextRoom(int currentX, int currentY)
         {
-            //dequeue the next room
             if (queueNextRooms.Count > 0)
                 return queueNextRooms.Dequeue();
-            //pick a random valid direction
-            List<(int, int)> directions = new List<(int, int)> { (0, 1), (1, 0), (0, -1), (-1, 0) };
-            directions.Sort((a, b) => random.Next(-1, 2));
-            int dirX = 0, dirY = 0;
-
-            for (int i = 0; i < 4; i++)
-            {
-                (dirX, dirY) = directions[i];
-                if (IsValidRoom(currentX + dirX, currentY + dirY))
-                    break;
-            }
-            if (!IsValidRoom(currentX + dirX, currentY + dirY))
-                return (currentX, currentY);
-            queueNextRooms.Enqueue((currentX + dirX, currentY + dirY));
-            //pick random number of rooms
-            int rpts = random.Next(1, size / 2);
-            for (int i = 0; i < rpts; i++)
-            {
-                currentX += dirX;
-                currentY += dirY;
-                if (IsValidRoom(currentX + dirX, currentY + dirY))
-                    queueNextRooms.Enqueue((currentX + dirX, currentY + dirY));
-                else
-                    break;
-            }
-            //in case of no room found
-            if (queueNextRooms.Count == 0)
-                return (currentX, currentY);
-            //dequeue the next room
-            return queueNextRooms.Dequeue();
+            AddRandomRoomsToQueue(currentX, currentY);
+            return queueNextRooms.Count > 0 ? queueNextRooms.Dequeue() : (currentX, currentY);
         }
 
-        private bool IsValidRoom(int X, int Y)
+        private void AddRandomRoomsToQueue(int currentX, int currentY)
         {
-            return X >= 0 && X < size && Y >= 0 && Y < size && !visited[X, Y];
+            var directions = GetRandomDirections();
+            int minLength = 1;
+            int maxLength = size / 2;
+
+            foreach (var (dirX, dirY) in directions)
+            {
+                if (!IsValidRoom(currentX + dirX, currentY + dirY))
+                    continue; //go for next direction
+                for (int i = 0; i < random.Next(minLength, maxLength); i++)
+                {
+                    if (!IsValidRoom(currentX + dirX, currentY + dirY))
+                        return; // Exit after adding last valid rooms of direction to queue
+                    currentX += dirX;
+                    currentY += dirY;
+                    queueNextRooms.Enqueue((currentX, currentY));
+                }
+                return; // Exit after adding rooms to queue
+            }
+        }
+
+        private List<(int x, int y)> GetRandomDirections()
+        {
+            var dirs = new List<(int x, int y)> { (0, 1), (1, 0), (0, -1), (-1, 0) };
+            int n = dirs.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = random.Next(n + 1);
+                (int, int) value = dirs[k];
+                dirs[k] = dirs[n];
+                dirs[n] = value;
+            }
+            return dirs;
+        }
+
+        private bool IsValidRoom(int x, int y)
+        {
+            return x >= 0 && x < size && y >= 0 && y < size && !visitedRooms[x, y];
         }
 
         private bool IsTreasure(int currentX, int currentY)
         {
-            return random.NextDouble() < 0.1 && currentX != entrance.X && currentY != entrance.Y;
+            return random.NextDouble() < TreasureProbability && currentX != entrance.X && currentY != entrance.Y;
         }
 
 

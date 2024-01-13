@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using MazeAdvanture.Models;
 using MazeAdvanture.Models.Behaviours;
@@ -39,6 +40,20 @@ namespace MazeAdvantureTests.Services
             // Assert
             var id = mazeIntegration.GetEntranceRoom();
             Assert.True(id >= 0 && id < size * size);
+        }
+
+        [Theory]
+        [InlineData(0)]
+        [InlineData(-1)]
+        [InlineData(2)]
+
+        public void BuildMaze_fail_invalid_size(int size)
+        {
+            // Arrange
+            var mazeIntegration = new MazeIntegration(_mazeSettings);
+            // Act
+            Assert.Throws<ArgumentException>(() => mazeIntegration.BuildMaze(size));
+
         }
 
         [Fact]
@@ -96,7 +111,7 @@ namespace MazeAdvantureTests.Services
         {
             // Arrange
             var mazeIntegration = new MazeIntegration(_mazeSettings);
-            int size = 3;
+            int size = 4;
             bool trs = false;
 
             // Act
