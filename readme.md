@@ -23,8 +23,8 @@ a console app to provide a simple way to play and test the functionality of the 
 ### The MazeAdvanture library provides below requirements:
 
 - Produces the maze with any size. The maze always are square.
-- The library get the RoomTypes and their behaviours as a settings. So that it can be very flexible. The MazeIntegration class would need MazeSettings in their constructor. you can set it using setting file. a sample of the settings file is provided in the following.
-- Although the maze is generated randomly, The maze is guaranteed to have atleast one solution to solve. Plase make sure at least one of room types are safe.
+- The library get the RoomTypes and their behaviours as a settings. So that it can be very flexible. The MazeIntegration class would need MazeSettings in their constructor. You can eighter use the MazeSettings.Default or set it manually(e.g. using settings file). a sample of the settings file is provided in the following.
+- Although the maze is generated randomly, it is guaranteed to have atleast one solution to solve. Plase make sure at least one of room types are safe.
 - Room Types can have different behaviours. For now only Trap behaviours are implemented. However the library can be simply extended to support other kinds of behaviours.
 - A room can have none to many behaviuors. If the summary of probabilities are more than 1, the chances will be devided to the sum of the probabilites.
 - The MazeIntegration class Also contains **DrawMaze()**, which print the maze in console. It can give a better imagination of the produced maze for testing the library.
